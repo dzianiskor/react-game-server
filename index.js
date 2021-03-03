@@ -39,4 +39,4 @@ app.post("/authenticate", async (req, res) => {
 });
 
 const PORT = process.env.SERVER_PORT || 5000;
-app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+app.listen(process.env.PORT || 5000, () => console.log(`Listening on ${PORT}`))
