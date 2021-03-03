@@ -38,5 +38,5 @@ app.post("/authenticate", async (req, res) => {
     return res.status(200).json(response);
 });
 
-const PORT = process.env.SERVER_PORT || 80;
+const PORT = process.env.SERVER_PORT || 5000;
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
